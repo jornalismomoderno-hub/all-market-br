@@ -1,0 +1,19 @@
+{
+  "name": "All Market Brasil Shopping",
+  "short_name": "AllMarket",
+  "description": "Plataforma inteligente de curadoria de ofertas e geração de leads para afiliados profissionais.",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/3081/3081559.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#2563eb",
+  "background_color": "#ffffff",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
