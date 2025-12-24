@@ -1,22 +1,14 @@
-{
-  "name": "all-market-brasil",
-  "private": true,
-  "version": "1.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+import { defineConfig } from 'vite';
+
+export default defineConfig({
+  define: {
+    'process.env.API_KEY': JSON.stringify(process.env.API_KEY)
   },
-  "dependencies": {
-    "@google/genai": "^1.34.0",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+  build: {
+    target: 'esnext',
+    outDir: 'dist'
   },
-  "devDependencies": {
-    "@types/react": "^19.0.0",
-    "@types/react-dom": "^19.0.0",
-    "typescript": "^5.0.0",
-    "vite": "^6.0.0"
+  server: {
+    port: 3000
   }
-}
+});
